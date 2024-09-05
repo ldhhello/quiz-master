@@ -1,0 +1,22 @@
+[
+    {
+        "quiz": "ㅇㅇㄴㅇㄹㄴㄹ",
+        "candidate": [
+            "dfsdfds",
+            "sdfewfe",
+            "rgreger"
+        ],
+        "answer": 1,
+        "explain": "그냥 1번이 답입니다."
+    },
+    {
+        "quiz": "222",
+        "candidate": [
+            "111111",
+            "222222",
+            "333333"
+        ],
+        "answer": 2,
+        "explain": "그냥 2번이 답입니다."
+    }
+]
