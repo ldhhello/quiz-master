@@ -4,21 +4,29 @@ import ExplainBox from './ExplainBox';
 const Title = styled.h1`
   font-size: 2rem;
   margin: 1rem;
+  padding-bottom: 4rem;
+  width: 60%;
+  font-family: 'Pretendard-SemiBold';
 `;
 const QuizButtonBase = styled.button`
   background-color: white;
   border: 1px solid black;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border-radius: 0.9rem;
+  border-radius: 1rem;
   font-size: 1rem;
   transition: all 0.3s ease;
+
+  width: 30rem;
+  position: relative;
 
   &:before {
     margin-right: 0.2rem;
     display: inline-block;
+    position: absolute;
+    left: 0.5rem;
     width: 0.9rem;
   }
   &:after {
@@ -39,6 +47,7 @@ const QuizButton = styled(QuizButtonBase)`
 `;
 const QuizButtonFixed = styled(QuizButtonBase)<{ correct?: boolean }>`
   border-color: ${({ correct }) => correct ? "green" : "red"};
+  cursor: default;
   &:before {
     content: "${({correct}) => correct ? "O" : "X"}";
     color: ${({ correct }) => correct ? "green" : "red"};
@@ -55,7 +64,7 @@ const Body = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.6rem;
   }
 `;
 
